@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+body {
+	background-image: url('../img/bg.png');
+	background-repeat: repeat-y;
+	background-size: 100%;
+
+}
+
+.headerlogodiv{
+	text-align: center;
+	height:150px;
+	padding:10px;
+	background-image: url('../img/headerlogo.png');
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size:30%;
+}
+
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+div.white{
+	background-color:white;
+}
+
+div.min-h-350{
+	min-height:350px;
+}
+
+div.min-h-150{
+	min-height:150px;
+}
+
+img{
+	width:100%;
+	max-width:100%;
+}
+
+div.footer{
+	width:100%;
+	padding:35px 10px 10px 10px;
+	background-image: url('../img/horizontalline-thick.png');
+	background-repeat: no-repeat;
+  	background-position: center top;
+  	background-size:100%;
+}
+
+div.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.footer div{
+	width:33%;
+	float:left;
+	height:350px;
+	color:white;
+	padding: 15px;
+}
+
+div.bg-vertical-r{
+	background-image: url('../img/verticalline.png');
+	background-repeat: no-repeat;
+  	background-position: right;
+  	background-size: auto 90%;
+}
+
+div.copyright{
+	background-image: url('../img/horizontalline-thick.png');
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size:100%;
+  	color:white;
+  	text-align: center;
+}
+
+div.productmenu{
+	min-height: 150px;
+}
+
+a.productmenu-link{
+	font-size:1.2em;
+	color:black;
+}
+
+p.assist-link{
+	padding:15px 20px 10px 20px;
+	border:1px solid darkgray;
+	font-size:1em;
+	width:100%;
+	text-align: center;
+	min-height:60px;
+}
+
+p.assist-link img{
+	width:25px;
+	height:auto;
+}
+
+
+div.productoverview{
+
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 992px) {
+  	.headerlogo{
+  		width:40%;
+  	}
+
+  	.headerlogodiv{
+  		height:120px;
+  		background-size:45%;
+  	}
+
+  	div.footer div{
+		width:49%;
+	}
+
+	
+}
+
+/* Use a media query to add a breakpoint at 500px: */
+@media screen and (max-width: 768px) {
+  	.headerlogo{
+  		width:60%;
+  	}
+
+  	.headerlogodiv{
+  		height:90px;
+  		background-size:60%;
+  	}
+
+  	div.footer div{
+		width:100%;
+	}
+
+	div.bg-vertical-r{
+		background-image:none;
+	}
+}
