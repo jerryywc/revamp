@@ -121,6 +121,15 @@ div.productoverview{
 
 }
 
+div.productdesc{
+	
+}
+
+div.productdesc ul{
+	list-style-type:none;
+	margin-left:-35px;
+}
+
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 992px) {
   	.headerlogo{

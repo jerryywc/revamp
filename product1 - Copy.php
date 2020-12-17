@@ -127,23 +127,6 @@
               		</div>
             	</div>            
         	</div><!--EndOf row-->
-        	<div class="row pt-3 p-5">
-        		<div class="col-md-4 col-sm-12 min-h-150 ">
-			        <p class=" assist-link">
-				        <a href="#"><img src="img/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
-				    </p>
-			    </div>
-			    <div class="col-md-4 col-sm-12 min-h-150 ">
-			        <p class=" assist-link">
-			            <a href="#">FIND RIGHT OIL FOR YOUR VEHICLE</a>
-			        </p>
-			    </div>
-			    <div class="col-md-4 col-sm-12 min-h-150">
-			        <p class=" assist-link">
-			            <a href="#">BUY ONLINE</a>
-			        </p>
-			    </div>      
-        	</div>
     	</div>
 	
 

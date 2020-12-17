@@ -78,11 +78,11 @@
               		<div class="productoverview mb-4 pt-3">
                 		<div class="row ">
 			            	<div class="col-md-6 col-sm-12 min-h-350 p-5">
-				              	<a href="#"><img src="img/fulls.png"/></a>
+				              	<a href="product1.php"><img src="img/fulls.png"/></a>
 				              	<h3>Fully Synthetic Motor Oil</h3>
 			            	</div>
 			            	<div class="col-md-6  col-sm-12 min-h-350 p-5">
-			              		<a href="#"><img src="img/semis.png"/></a>
+			              		<a href="product1.php"><img src="img/semis.png"/></a>
 			              		<h3>Semi-Synthetic Motor Oil</h3>
 			            	</div>            
 			        	</div>
@@ -92,7 +92,7 @@
 				              	<h3>Industrial Lubricants</h3>
 			            	</div>
 			            	<div class="col-md-6  col-sm-12 min-h-230 p-5">
-			              		<a href="#"><img src="img/blank.png"/></a>
+			              		<a href="product2.php"><img src="img/blank.png"/></a>
 			              		<h3>Other Products</h3>
 			            	</div>            
 			        	</div>
@@ -110,7 +110,7 @@
 			        	</div>
               		</div>
             	</div>            
-        	</div><!--EndOf row-->
+        	</div><!--EndOf row-->        	
     	</div>
 	
 
