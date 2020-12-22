@@ -38,7 +38,7 @@
 			      	</li>
 
 			      	<li class="nav-item rightborder">
-			        	<a class="nav-link active" href="#">Products</a>
+			        	<a class="nav-link active" href="product1.php">Products</a>
 			      	</li>
 
 			      	<li class="nav-item rightborder">
@@ -63,54 +63,43 @@
 		
 
 	
-        <div class="container white">
+        <div class="container white pb-5">
+        	<h3 class="text-center pt-5">HI-REV INDUSTRIAL LUBRICANTS</h3>
           	<div class="row ">
-            	<div class="col-lg-3 col-md-4 col-sm-12">
-	              	<div class="productmenu mb-4 p-5">
-	              		<h2>Products</h2>
-	                	<a href="#" class="productmenu-link">Motor Oil</a><br/>
-	                	<a href="#" class="productmenu-link">Motorcycle Oil</a><br/>
-	                	<a href="#" class="productmenu-link">Industrial Lubricants</a><br/>
-	                	<a href="#" class="productmenu-link">Other Products</a>
-	              	</div>
+            	<div class="col-lg-5 col-md-6 col-sm-12 indlub text-right">
+            		
+				<img src="img/indlub.png" class="mt-5"/>
+                
+
             	</div>
-            	<div class="col-lg-9 col-md-8  col-sm-12">
-              		<div class="productoverview mb-4 pt-3">
-                		<div class="row ">
-			            	<div class="col-md-6 col-sm-12 min-h-350 p-5">
-				              	<a href="product1.php"><img src="img/fulls.png"/></a>
-				              	<h3>Fully Synthetic Motor Oil</h3>
-			            	</div>
-			            	<div class="col-md-6  col-sm-12 min-h-350 p-5">
-			              		<a href="product1.php"><img src="img/semis.png"/></a>
-			              		<h3>Semi-Synthetic Motor Oil</h3>
-			            	</div>            
-			        	</div>
-			        	<div class="row ">
-			            	<div class="col-md-6 col-sm-12 min-h-350 p-5">
-				              	<a href="#"><img src="img/blank.png"/></a>
-				              	<h3>Industrial Lubricants</h3>
-			            	</div>
-			            	<div class="col-md-6  col-sm-12 min-h-230 p-5">
-			              		<a href="product2.php"><img src="img/blank.png"/></a>
-			              		<h3>Other Products</h3>
-			            	</div>            
-			        	</div>
-			        	<div class="row ">
-			            	<div class="col-md-6 col-sm-12 min-h-150 p-5">
-			            		<p class=" assist-link">
-				              		<a href="#"><img src="img/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
-				              	</p>
-			            	</div>
-			            	<div class="col-md-6 col-sm-12 min-h-150 p-5">
-			              		<p class=" assist-link">
-			              			<a href="#">FIND RIGHT OIL FOR YOUR VEHICLE</a>
-			              		</p>
-			            	</div>            
-			        	</div>
+            	<div class="col-lg-7 col-md-6  col-sm-12 px-5">
+              		<div class="indlubdesc mb-4 pt-5">
+              			<h4 class="title">METAL WORKING FLUIDS</h4>
+                		
+                		<div class="indlubpoint mb-2">
+                			<span>coolcut oil fgs</span><br/>
+                			Fully Synthetic Water Soluble Grinding Fluids
+                		</div>
+                		<div class="indlubpoint mb-2">
+                			<span>coolcut oil fcos</span><br/>
+                			Fully Synthetic Water Soluble Grinding Fluids For Tungsten Carbide
+                		</div>
+                		<div class="indlubpoint mb-2">
+                			<span>coolcut oil pe</span><br/>
+                			Eco Friendly Water Soluble Metal Cutting Fluids For Ferrous Metal & Non Ferrous Metal
+                		</div>
+                		<div class="indlubpoint mb-2">
+                			<span>coolcut oil nb</span><br/>
+                			General Purpose Water Soluble Metal Cutting Fluids For Ferrous Metal & Non Ferrous Metal
+                		</div>
+                		<div class="indlubpoint mb-2">
+                			<span>transtex ns 7,9</span><br/>
+                			Light Viscocity Neat Cutting Oil For Cast Iron & Aluminium Griding & Machining
+                		</div>
+                		
               		</div>
             	</div>            
-        	</div><!--EndOf row-->        	
+        	</div><!--EndOf row-->
     	</div>
 	
 

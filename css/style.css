@@ -130,6 +130,25 @@ div.productdesc ul{
 	margin-left:-35px;
 }
 
+.indlub img{
+	width:90%;
+	max-width:90%;
+	height:auto;
+}
+
+div.indlubdesc{
+
+}
+
+div.indlubdesc h4.title{
+	text-decoration: underline;
+}
+
+div.indlubdesc .indlubpoint span{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 992px) {
   	.headerlogo{

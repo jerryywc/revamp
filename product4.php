@@ -8,6 +8,7 @@
   		
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/custom.css" />
+		<link rel="stylesheet" href="css/multislider.css" />
 	</head>
 	<body>
 		<div class="headerlogodiv">
@@ -66,66 +67,9 @@
         <div class="container white pb-5">
         	<h3 class="text-center pt-5">HI-REV 9140 PREMIUM FULLY SYNTHETIC MOTOR OIL</h3>
           	<div class="row ">
-            	<div class="col-lg-5 col-md-6 col-sm-12">
-            		
-				<div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
-                <!-- slides -->
-                <ol class="carousel-indicators list-inline mb-5 pb-5">
-                    <li class="list-inline-item active pb-5"> 
-                    	<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item  pb-5"> 
-                    	<a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item pb-5"> 
-                    	<a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item pb-5"> 
-                    	<a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item my-2 active"> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                </div> <!-- Left right --> 
-                <a class="carousel-control-prev mt-5 pt-5" href="#custCarousel" data-slide="prev"> 
-                	<span class="carousel-control-prev-icon"></span> 
-                </a> 
-                <a class="carousel-control-next mt-5 pt-5" href="#custCarousel" data-slide="next"> 
-                	<span class="carousel-control-next-icon"></span> 
-                </a> <!-- Thumbnails -->
-                
-            </div>
-
+            	<div class="col-sm-12">
+            		<!-- Carousel here -->
             	</div>
-            	<div class="col-lg-7 col-md-6  col-sm-12 px-5">
-              		<div class="productdesc mb-4 pt-5">
-                		<p>
-                			Premium synthethic motor oil formulated to provide performance & protection in high-performance European vehicles made by Volkswagen, Audi, Mercedes-Benz, BMW, Porsche & others. Hi-Rev 9140 SW-40 meets the most demanding & strict European performance requirements.
-                		</p>
-                		<h4>Technical Specifications:</h4>
-                		<ul>
-                			<li>API SN / CF</li>
-                			<li>ACEA A3 / B4-12</li>
-                			<li>SAE 5W-40</li>
-                			<li>Renault RN 0700/0710</li>
-                			<li>Porsche A40 Approval</li>
-                			<li>MB-Approval 229.5</li>
-                			<li>VW 502 00 / 505 00</li>
-                			<li>BMW Longlife-01</li>
-                		</ul>
-              		</div>
-            	</div>            
         	</div><!--EndOf row-->
         	<div class="row pt-3 p-5">
         		<div class="col-md-4 col-sm-12 min-h-150 ">

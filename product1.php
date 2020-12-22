@@ -38,7 +38,7 @@
 			      	</li>
 
 			      	<li class="nav-item rightborder">
-			        	<a class="nav-link active" href="product.php">Products</a>
+			        	<a class="nav-link active" href="#">Products</a>
 			      	</li>
 
 			      	<li class="nav-item rightborder">
@@ -63,87 +63,54 @@
 		
 
 	
-        <div class="container white pb-5">
-        	<h3 class="text-center pt-5">HI-REV 9140 PREMIUM FULLY SYNTHETIC MOTOR OIL</h3>
+        <div class="container white">
           	<div class="row ">
-            	<div class="col-lg-5 col-md-6 col-sm-12">
-            		
-				<div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
-                <!-- slides -->
-                <ol class="carousel-indicators list-inline mb-5 pb-5">
-                    <li class="list-inline-item active pb-5"> 
-                    	<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item  pb-5"> 
-                    	<a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item pb-5"> 
-                    	<a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item pb-5"> 
-                    	<a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item my-2 active"> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                </div> <!-- Left right --> 
-                <a class="carousel-control-prev mt-5 pt-5" href="#custCarousel" data-slide="prev"> 
-                	<span class="carousel-control-prev-icon"></span> 
-                </a> 
-                <a class="carousel-control-next mt-5 pt-5" href="#custCarousel" data-slide="next"> 
-                	<span class="carousel-control-next-icon"></span> 
-                </a> <!-- Thumbnails -->
-                
-            </div>
-
+            	<div class="col-lg-3 col-md-4 col-sm-12">
+	              	<div class="productmenu mb-4 p-5">
+	              		<h2>Products</h2>
+	                	<a href="product2.php" class="productmenu-link">Motor Oil</a><br/>
+	                	<a href="product2.php" class="productmenu-link">Motorcycle Oil</a><br/>
+	                	<a href="product3.php" class="productmenu-link">Industrial Lubricants</a><br/>
+	                	<a href="product4.php" class="productmenu-link">Other Products</a>
+	              	</div>
             	</div>
-            	<div class="col-lg-7 col-md-6  col-sm-12 px-5">
-              		<div class="productdesc mb-4 pt-5">
-                		<p>
-                			Premium synthethic motor oil formulated to provide performance & protection in high-performance European vehicles made by Volkswagen, Audi, Mercedes-Benz, BMW, Porsche & others. Hi-Rev 9140 SW-40 meets the most demanding & strict European performance requirements.
-                		</p>
-                		<h4>Technical Specifications:</h4>
-                		<ul>
-                			<li>API SN / CF</li>
-                			<li>ACEA A3 / B4-12</li>
-                			<li>SAE 5W-40</li>
-                			<li>Renault RN 0700/0710</li>
-                			<li>Porsche A40 Approval</li>
-                			<li>MB-Approval 229.5</li>
-                			<li>VW 502 00 / 505 00</li>
-                			<li>BMW Longlife-01</li>
-                		</ul>
+            	<div class="col-lg-9 col-md-8  col-sm-12">
+              		<div class="productoverview mb-4 pt-3">
+                		<div class="row ">
+			            	<div class="col-md-6 col-sm-12 min-h-350 p-5">
+				              	<a href="product2.php"><img src="img/fulls.png"/></a>
+				              	<h3>Fully Synthetic Motor Oil</h3>
+			            	</div>
+			            	<div class="col-md-6  col-sm-12 min-h-350 p-5">
+			              		<a href="product2.php"><img src="img/semis.png"/></a>
+			              		<h3>Semi-Synthetic Motor Oil</h3>
+			            	</div>            
+			        	</div>
+			        	<div class="row ">
+			            	<div class="col-md-6 col-sm-12 min-h-350 p-5">
+				              	<a href="product3.php"><img src="img/blank.png"/></a>
+				              	<h3>Industrial Lubricants</h3>
+			            	</div>
+			            	<div class="col-md-6  col-sm-12 min-h-230 p-5">
+			              		<a href="product4.php"><img src="img/blank.png"/></a>
+			              		<h3>Other Products</h3>
+			            	</div>            
+			        	</div>
+			        	<div class="row ">
+			            	<div class="col-md-6 col-sm-12 min-h-150 p-5">
+			            		<p class=" assist-link">
+				              		<a href="#"><img src="img/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
+				              	</p>
+			            	</div>
+			            	<div class="col-md-6 col-sm-12 min-h-150 p-5">
+			              		<p class=" assist-link">
+			              			<a href="#">FIND RIGHT OIL FOR YOUR VEHICLE</a>
+			              		</p>
+			            	</div>            
+			        	</div>
               		</div>
             	</div>            
-        	</div><!--EndOf row-->
-        	<div class="row pt-3 p-5">
-        		<div class="col-md-4 col-sm-12 min-h-150 ">
-			        <p class=" assist-link">
-				        <a href="#"><img src="img/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
-				    </p>
-			    </div>
-			    <div class="col-md-4 col-sm-12 min-h-150 ">
-			        <p class=" assist-link">
-			            <a href="#">FIND RIGHT OIL FOR YOUR VEHICLE</a>
-			        </p>
-			    </div>
-			    <div class="col-md-4 col-sm-12 min-h-150">
-			        <p class=" assist-link">
-			            <a href="#">BUY ONLINE</a>
-			        </p>
-			    </div>      
-        	</div>
+        	</div><!--EndOf row-->        	
     	</div>
 	
 
