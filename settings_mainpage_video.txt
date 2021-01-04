@@ -1,0 +1,12 @@
+CREATE TABLE `settings_mainpage_video` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `video_type` int NOT NULL DEFAULT '1' COMMENT '1 - youtube, 2 - inhouse',
+  `video_link` varchar(255) NOT NULL,
+  `row_status` int NOT NULL DEFAULT '1',
+  `createdby` varchar(50) DEFAULT NULL,
+  `createddatetime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `modifiedby` varchar(50) DEFAULT NULL,
+  `modifieddatetime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+SELECT * FROM hirevadm_db.settings_mainpage_video;

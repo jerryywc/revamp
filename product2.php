@@ -8,6 +8,7 @@
   		
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/custom.css" />
+		<link rel="icon" type="image/png" href="img/lionhead.png">
 	</head>
 	<body>
 		<div class="headerlogodiv">
