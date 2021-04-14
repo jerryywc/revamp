@@ -6,6 +6,12 @@
 		<?php require_once "require/linkrel.php"?>		
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=383230492974724&autoLogAppEvents=1" nonce="Cu9UMj2p"></script>
+
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="8EscK4w2"></script>
+
 		<header></header>
 		<div class="hirevlogo"></div>
 
@@ -43,11 +49,7 @@
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">
-			        	<a class="nav-link" href="#">Feed</a>
-			      	</li>
-
-			      	<li class="nav-item text-left">
-			        	<a class="nav-link" href="#">Info</a>
+			        	<a class="nav-link" href="career.php">Career</a>
 			      	</li>
 			    </ul>			    
 			</div>
@@ -61,7 +63,7 @@
 		    die("Connection failed: " . mysqli_connect_error());
 		}
 
-		$sql = "SELECT * FROM settings_mainpage_sliders WHERE row_status = 1 ORDER BY seq";
+		$sql = "SELECT * from slider where status='1' order by slider_seq desc";
 		$result = mysqli_query($conn, $sql);
 
 		$row_cnt = mysqli_num_rows($result);
@@ -93,8 +95,8 @@
 				$active = "";
 				if ($row_cnt > 0) {
 				    while($row = mysqli_fetch_assoc($result)) {
-				    	$img_name = $row['img_name'];
-				    	$url = $row['url'];
+				    	$img_name = $row['slider_img'];
+				    	$url = $row['slider_link'];
 				
 						if($i == 0) {
 							$active = "active";
@@ -106,12 +108,12 @@
 						if(!empty($url)){
 							echo '<div class="carousel-item ' . $active . ' ">
 								<a href="' . $url . '">
-				      			<img class="d-block w-100" src="img/mainpage/' . $img_name . '" alt="Slide #' . $i . '">
+				      			<img class="d-block w-100" src="IMG/data1/images/' . $img_name . '" alt="Slide #' . $i . '">
 				      			</a>
 				    		  	</div>';
 						} else {
 				    		echo '<div class="carousel-item ' . $active . ' ">
-				      			<img class="d-block w-100" src="img/mainpage/' . $img_name . '" alt="Slide #' . $i . '">
+				      			<img class="d-block w-100" src="IMG/data1/images/' . $img_name . '" alt="Slide #' . $i . '">
 				    		  	</div>';
 				    	}
 				    	
@@ -132,22 +134,26 @@
 		<!-- end of Carousel -->
 
 	<div class="main py-3">
-      <div class="album py-2 pb-5 mx-5">
-        <div class="container">
+      <div class="album py-0 px-0 mx-5">
+        <div class="container p-0 m-0">
 
-          <div class="row ">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="card mb-4 shadow-sm">
-                Facebook post
+          <div class="row mx-0 px-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-2" >
+              <div class="card  shadow-sm text-center"  style="height:400px">
+                <div class="fb-page" data-href="https://www.facebook.com/hirevjunction" data-tabs="timeline" data-width="420" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hirevjunction" class="fb-xfbml-parse-ignore" ><a href="https://www.facebook.com/hirevjunction">HI-REV Junction</a></blockquote></div>
+                
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6  col-sm-12 mb-2">
+              <div class="card shadow-sm" style="height:400px">
+              	
+                <a href="gallery.php">Gallery</a>
+            
+
               </div>
             </div>
             <div class="col-lg-4 col-md-6  col-sm-12">
-              <div class="card mb-4 shadow-sm">
-                Gallery
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6  col-sm-12">
-              <div class="card mb-4 shadow-sm video-responsive">
+              <div class="card shadow-sm video-responsive" style="height:400px">
               	<?php
 					$conn = mysqli_connect("localhost", "hirevadm_pbm_usr", "posimADMIN!111", "hirevadm_db");
 					if(!$conn){
@@ -165,7 +171,7 @@
 				    	if(!empty($video_type) && $video_type == 1){
 				    		$pos = strrpos($video_link, '/');
 				    		$youtube_link = "https://www.youtube.com/embed" . substr($video_link,$pos);
-				    		echo '<iframe width="350" height="210" 
+				    		echo '<iframe width="350" height="250" 
 				    			src="' . $youtube_link . '" 
 				    			frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 				    			encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';

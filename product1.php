@@ -11,18 +11,15 @@
 		<link rel="icon" type="image/png" href="img/lionhead.png">
 	</head>
 	<body>
-		<div class="headerlogodiv">
-			<!--
-			<img src="img/headerlogo.png" class="headerlogo"/>
-		-->
-		</div>
+		<header></header>
+		<div class="hirevlogo"></div>
 
 
 
 		<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light">
 			
-	  		<a class="navbar-brand" href="#">Hirev</a>
-	  	
+	  		<a class="navbar-brand d-lg-none ml-4 pl-2" href="#">Hirev</a>
+	  		
 	  		<button class="navbar-toggler" class="background-color:white" type="button" data-toggle="collapse" data-target="
 	  			#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    		<span class="navbar-toggler-icon"></span>
@@ -30,31 +27,31 @@
 
 	  		<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 			    <ul class="navbar-nav mx-auto">
-			      	<li class="nav-item active  rightborder">
-			        	<a class="nav-link" href="index.php">Home</span></a>
+			      	<li class="nav-item  text-left rightborder">
+			        	<a class="nav-link " href="#">Home</span></a>
 			      	</li>
 
-			      	<li class="nav-item rightborder">
+			      	<li class="nav-item rightborder text-left">
 			        	<a class="nav-link" href="#">About Us</a>
 			      	</li>
 
-			      	<li class="nav-item rightborder">
-			        	<a class="nav-link active" href="#">Products</a>
+			      	<li class="nav-item rightborder active text-left">
+			        	<a class="nav-link active" href="product1.php">Products</a>
 			      	</li>
 
-			      	<li class="nav-item rightborder">
+			      	<li class="nav-item rightborder text-left">
 			        	<a class="nav-link" href="#">Recommender</a>
 			      	</li>
 
-			      	<li class="nav-item rightborder">
+			      	<li class="nav-item rightborder text-left">
 			        	<a class="nav-link" href="#">Contact</a>
 			      	</li>
 
-			      	<li class="nav-item rightborder">
+			      	<li class="nav-item rightborder text-left">
 			        	<a class="nav-link" href="#">Feed</a>
 			      	</li>
 
-			      	<li class="nav-item">
+			      	<li class="nav-item text-left">
 			        	<a class="nav-link" href="#">Info</a>
 			      	</li>
 			    </ul>			    
