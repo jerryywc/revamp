@@ -6,9 +6,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
 			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   		
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/custom.css" />
-		<link rel="icon" type="image/png" href="img/lionhead.png">
+		<?php require_once "require/linkrel.php"?>	
 	</head>
 	<body>
 		<header></header>
@@ -76,28 +74,28 @@
               		<div class="productoverview mb-4 pt-3">
                 		<div class="row ">
 			            	<div class="col-md-6 col-sm-12 min-h-350 p-5">
-				              	<a href="product2.php"><img src="img/fulls.png"/></a>
+				              	<a href="product2.php"><img src="IMG/fulls.png"/></a>
 				              	<h3>Fully Synthetic Motor Oil</h3>
 			            	</div>
 			            	<div class="col-md-6  col-sm-12 min-h-350 p-5">
-			              		<a href="product2.php"><img src="img/semis.png"/></a>
+			              		<a href="product2.php"><img src="IMG/semis.png"/></a>
 			              		<h3>Semi-Synthetic Motor Oil</h3>
 			            	</div>            
 			        	</div>
 			        	<div class="row ">
 			            	<div class="col-md-6 col-sm-12 min-h-350 p-5">
-				              	<a href="product3.php"><img src="img/blank.png"/></a>
+				              	<a href="product3.php"><img src="IMG/blank.png"/></a>
 				              	<h3>Industrial Lubricants</h3>
 			            	</div>
 			            	<div class="col-md-6  col-sm-12 min-h-230 p-5">
-			              		<a href="product4.php"><img src="img/blank.png"/></a>
+			              		<a href="product4.php"><img src="IMG/blank.png"/></a>
 			              		<h3>Other Products</h3>
 			            	</div>            
 			        	</div>
 			        	<div class="row ">
 			            	<div class="col-md-6 col-sm-12 min-h-150 p-5">
 			            		<p class=" assist-link">
-				              		<a href="#"><img src="img/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
+				              		<a href="#"><img src="IMG/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
 				              	</p>
 			            	</div>
 			            	<div class="col-md-6 col-sm-12 min-h-150 p-5">

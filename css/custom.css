@@ -1,7 +1,29 @@
+footer{
+	font-size:0.725rem;
+}
+
+footer ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+footer a{
+	color:white;
+}
+
+footer span{
+	font-size:0.825rem;
+	font-weight:bold;
+}
+
 .navbar{
 	
-	background-color:rgba(0,0,0,0.3);
-	
+	/*background-color:rgba(0,0,0,0.6);*/
+	background-color:black;
+	border-top:1px 	goldenrod solid;
+	border-bottom:1px goldenrod solid;
+	padding: 0.2rem 0.5rem;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item{
@@ -34,7 +56,9 @@
 
 a.active{
 	background-color:red;
-	background-color:rgba(100,50,50,.3);
+	/*background-color:rgba(100,50,50,.3);*/
+	background-color: #4e0000ed;
+	text-transform: uppercase;
 }
 
 div.main{
@@ -43,7 +67,7 @@ div.main{
 
 div.album{
 	
-	background-image: url('../img/horizontalline.png');
+	background-image: url('../IMG/horizontalline.png');
 	background-repeat: no-repeat;
   	background-position: center bottom;
   	background-size:100%;

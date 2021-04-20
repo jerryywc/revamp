@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-	background-image: url('../img/bg.png');
+	background-image: url('../IMG/bg.png');
 	background-repeat: repeat-y;
 	background-size: 100%;
 
@@ -14,7 +14,7 @@ header {
 }
 .hirevlogo {
   padding-bottom: 13.5%; /* = ( 600 / 1600 ) x 100 */
-  background-image: url( '../img/headerlogo.png' );
+  background-image: url( '../IMG/headerlogo.png' );
   background-repeat: no-repeat;
   	background-position: center;
   background-size: 40%;
@@ -56,7 +56,7 @@ img{
 div.footer{
 	width:100%;
 	padding:35px 10px 10px 10px;
-	background-image: url('../img/horizontalline-thick.png');
+	background-image: url('../IMG/horizontalline-thick.png');
 	background-repeat: no-repeat;
   	background-position: center top;
   	background-size:100%;
@@ -77,14 +77,14 @@ div.footer div{
 }
 
 div.bg-vertical-r{
-	background-image: url('../img/verticalline.png');
+	background-image: url('../IMG/verticalline.png');
 	background-repeat: no-repeat;
   	background-position: right;
   	background-size: auto 90%;
 }
 
 div.copyright{
-	background-image: url('../img/horizontalline-thick.png');
+	background-image: url('IMG/horizontalline-thick.png');
 	background-repeat: no-repeat;
   	background-position: center;
   	background-size:100%;

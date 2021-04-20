@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Revamp</title>
+		<title>HI-REV</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<?php require_once "require/linkrel.php"?>		
+		
+		<?php require_once "require/linkrel.php"?>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -57,7 +58,7 @@
 
 		<?php
 
-		$conn = mysqli_connect("localhost", "hirevadm_pbm_usr", "posimADMIN!111", "hirevadm_db");
+		$conn = mysqli_connect("localhost", "hirevadm_usr", "posimadmin@2018", "hirevadm_db");
 		if(!$conn){
 		    echo "<script> alert('Connection to database failed'); </script>";
 		    die("Connection failed: " . mysqli_connect_error());
@@ -134,7 +135,7 @@
 		<!-- end of Carousel -->
 
 	<div class="main py-3">
-      <div class="album py-0 px-0 mx-5">
+      <div class="album py-0 px-0 mx-0 mx-md-5">
         <div class="container p-0 m-0">
 
           <div class="row mx-0 px-0">
@@ -155,7 +156,7 @@
             <div class="col-lg-4 col-md-6  col-sm-12">
               <div class="card shadow-sm video-responsive" style="height:400px">
               	<?php
-					$conn = mysqli_connect("localhost", "hirevadm_pbm_usr", "posimADMIN!111", "hirevadm_db");
+					$conn = mysqli_connect("localhost", "hirevadm_usr", "posimadmin@2018", "hirevadm_db");
 					if(!$conn){
 					    echo "<script> alert('Connection to database failed'); </script>";
 					    die("Connection failed: " . mysqli_connect_error());
@@ -200,10 +201,13 @@
 		</div>
 	</div>
 
+		<?php require_once "require/footer.php"?>
+        <!--
         <div class="copyright">
         		COPYRIGHT (C) 2020. www.hi-rev.com.my | TERMS OF USAGE | SUPPORT / HELP
         </div>
-
+		-->
+		
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

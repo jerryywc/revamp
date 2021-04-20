@@ -8,12 +8,12 @@
   		
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/custom.css" />
-		<link rel="icon" type="image/png" href="img/lionhead.png">
+		<link rel="icon" type="image/png" href="IMG/lionhead.png">
 	</head>
 	<body>
 		<div class="headerlogodiv">
 			<!--
-			<img src="img/headerlogo.png" class="headerlogo"/>
+			<img src="IMG/headerlogo.png" class="headerlogo"/>
 		-->
 		</div>
 
@@ -74,30 +74,30 @@
                 <ol class="carousel-indicators list-inline mb-5 pb-5">
                     <li class="list-inline-item active pb-5"> 
                     	<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
+                    		<img src="IMG/products/p1.png" class="img-fluid"> 
                     	</a> 
                     </li>
                     <li class="list-inline-item  pb-5"> 
                     	<a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
+                    		<img src="IMG/products/p1.png" class="img-fluid"> 
                     	</a> 
                     </li>
                     <li class="list-inline-item pb-5"> 
                     	<a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
+                    		<img src="IMG/products/p1.png" class="img-fluid"> 
                     	</a> 
                     </li>
                     <li class="list-inline-item pb-5"> 
                     	<a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> 
-                    		<img src="img/products/p1.png" class="img-fluid"> 
+                    		<img src="IMG/products/p1.png" class="img-fluid"> 
                     	</a> 
                     </li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item my-2 active"> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="img/products/p1.png" alt="Hills"> </div>
+                    <div class="carousel-item my-2 active"> <img src="IMG/products/p1.png" alt="Hills"> </div>
+                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
+                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
+                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
                 </div> <!-- Left right --> 
                 <a class="carousel-control-prev mt-5 pt-5" href="#custCarousel" data-slide="prev"> 
                 	<span class="carousel-control-prev-icon"></span> 
@@ -131,7 +131,7 @@
         	<div class="row pt-3 p-5">
         		<div class="col-md-4 col-sm-12 min-h-150 ">
 			        <p class=" assist-link">
-				        <a href="#"><img src="img/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
+				        <a href="#"><img src="IMG/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
 				    </p>
 			    </div>
 			    <div class="col-md-4 col-sm-12 min-h-150 ">
