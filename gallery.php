@@ -3,7 +3,7 @@
 	<head>
 		<title>Revamp</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<?php require_once "require/linkrel.php"?>		
+		<?php require_once "_require/linkrel.php"?>		
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -79,7 +79,7 @@
 		</div>
 	</div>
 -->
-        <?php require_once "require/footer.php"?>
+        <?php require_once "_require/footer.php"?>
         <!--
         <div class="copyright">
         		COPYRIGHT (C) 2020. www.hi-rev.com.my | TERMS OF USAGE | SUPPORT / HELP

@@ -22,6 +22,7 @@ header {
 
 
 
+
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -49,7 +50,7 @@ div.min-h-150{
 }
 
 img{
-	width:100%;
+	/* width:100%;*/
 	max-width:100%;
 }
 
@@ -166,8 +167,6 @@ div.indlubdesc .indlubpoint span{
   	div.footer div{
 		width:49%;
 	}
-
-	
 }
 
 /* Use a media query to add a breakpoint at 500px: */

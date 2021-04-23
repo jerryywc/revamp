@@ -1,0 +1,187 @@
+#editor-container {
+  min-height: 300px;
+}
+
+    *{
+      box-sizing:border-box;
+      font-family:Helvetica, Arial, sans-serif;
+    }
+
+    body{
+      font-size:0.875rem;
+    }
+
+    .navigator{
+      font-size:0.725rem;
+      background-color: black;
+      background-image: linear-gradient(to right, black , black, white);
+      color:white;
+      font-weight:bold;
+      margin:0;
+      padding: 5px;
+    }
+
+    .navigator a{
+      font-size:0.725rem;
+      color:white;
+      text-decoration: none;
+      margin-right:10px;
+      margin-left:10px;
+    }
+
+    .col-100{
+      width:100%;
+    }
+
+    .col-90{
+      width:90%;
+    }
+
+    .col-80{
+      width:80%;
+    }
+
+    .col-75{
+      width:75%
+    }
+
+    .col-67{
+      width:67%;
+    }
+
+    .col-50{
+      width:50%;
+    }
+
+    .col-33{
+      width:33%;
+    }
+
+    .col-25{
+      width:25%;
+    }
+
+    .col-20{
+      width:20%;
+    }
+
+    .col-10{
+      width:10%;
+    }
+
+    .col-0{
+      display:none;
+    }
+
+    .column{
+      border:0px gray solid;
+      font-size:0.775rem;
+    }
+
+    .column img{
+      /*
+      width:auto;
+      */
+    }
+
+    .float-left{
+      
+      float:left;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .quill{
+      box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+
+      height: 100%;
+      margin: 0px;
+      position: relative;
+      line-height: 1.42;
+      
+      outline: none;
+      overflow-y: auto;
+      padding: 12px 15px;
+      tab-size: 4;
+      -moz-tab-size: 4;
+      text-align: left;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .quill p, .quill ol, .quill ul, .quill pre, .quill blockquote, .quill h1, .quill h2, .quill h3, .quill h4, .quill h5, .quill h6{
+      margin: 0;
+      padding: 0;
+      counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+    }
+
+    .ql-editor {
+      box-sizing: border-box;
+      line-height: 1.42;
+      height: auto;
+      outline: none;
+      overflow-y: auto;
+      padding: 12px 15px;
+      tab-size: 4;
+      -moz-tab-size: 4;
+      text-align: left;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+  }
+
+    .ql-container{
+      height:auto;
+    }
+
+    .ql-container.ql-snow {
+        border: 0px solid #ccc;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      .col-100{
+        width:100%;
+      }
+
+      .col-90{
+        width:100%;
+      }
+
+      .col-80{
+        width:100%;
+      }
+
+      .col-75{
+        width:100%;
+      }
+
+      .col-67{
+        width:100%;
+      }
+
+      .col-50{
+        width:100%;
+      }
+
+      .col-33{
+        width:100%;
+      }
+
+      .col-25{
+        width:100%;
+      }
+
+      .col-20{
+        width:100%;
+      }
+
+      .col-10{
+        width:100%;
+      }
+    }

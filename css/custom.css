@@ -71,6 +71,7 @@ div.album{
 	background-repeat: no-repeat;
   	background-position: center bottom;
   	background-size:100%;
+
 }
 
 div.card{
@@ -80,7 +81,9 @@ div.card{
 	color:white;
 }
 
-
+.rounded-border{
+	border-radius:10px;
+}
 
 div.container{
 	max-width: 100%;

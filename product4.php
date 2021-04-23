@@ -9,12 +9,12 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/custom.css" />
 		<link rel="stylesheet" href="css/multislider.css" />
-		<link rel="icon" type="image/png" href="img/lionhead.png">
+		<link rel="icon" type="image/png" href="IMG/lionhead.png">
 	</head>
 	<body>
 		<div class="headerlogodiv">
 			<!--
-			<img src="img/headerlogo.png" class="headerlogo"/>
+			<img src="IMG/headerlogo.png" class="headerlogo"/>
 		-->
 		</div>
 
@@ -75,7 +75,7 @@
         	<div class="row pt-3 p-5">
         		<div class="col-md-4 col-sm-12 min-h-150 ">
 			        <p class=" assist-link">
-				        <a href="#"><img src="img/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
+				        <a href="#"><img src="IMG/map-pointer.png"/>FIND HI-REV NEAR YOU</a>
 				    </p>
 			    </div>
 			    <div class="col-md-4 col-sm-12 min-h-150 ">

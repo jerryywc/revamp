@@ -8,12 +8,12 @@
   		
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/custom.css" />
-		<link rel="icon" type="image/png" href="img/lionhead.png">
+		<link rel="icon" type="image/png" href="IMG/lionhead.png">
 	</head>
 	<body>
 		<div class="headerlogodiv">
 			<!--
-			<img src="img/headerlogo.png" class="headerlogo"/>
+			<img src="IMG/headerlogo.png" class="headerlogo"/>
 		-->
 		</div>
 
@@ -69,7 +69,7 @@
           	<div class="row ">
             	<div class="col-lg-5 col-md-6 col-sm-12 indlub text-right">
             		
-				<img src="img/indlub.png" class="mt-5"/>
+				<img src="IMG/indlub.png" class="mt-5"/>
                 
 
             	</div>
