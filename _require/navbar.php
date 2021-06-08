@@ -38,10 +38,11 @@
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">
-			      		<!--
+			      		
 			        	<a class="nav-link <?=$product_active?>" href="product_menu.php">Products</a>
-			        -->
-			        	<a class="nav-link" href="product_category.php">Products</a>
+			        	<!--
+			        	<a class="nav-link <?=$product_active?>" href="product_category.php">Products</a>
+			        	-->
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">

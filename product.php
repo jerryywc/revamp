@@ -7,6 +7,17 @@ if(isset($_GET['IID']) && !empty(trim($_GET['IID']))){
 	$item_id = $_GET['IID'];
 }
 
+function cleanb($string){
+
+    $string = str_replace('{123', '<ol><li>', $string);
+    $string = str_replace('}123', '</li></ol>', $string);
+    $string = str_replace('{', '<ul><li>', $string);
+    $string = str_replace('#', '</li><li>', $string);
+    $string = str_replace('}', '</li></ul>', $string);
+
+    return $string;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -37,9 +48,9 @@ if(isset($_GET['IID']) && !empty(trim($_GET['IID']))){
 			}
 
 			$product_images = array();
-			$product_name;
-			$product_desc_lt;
-			$product_detail_desc_lt;
+			$product_name = "";
+			$product_desc_lt = "";
+			$product_detail_desc_lt = "";
 
 			try{
 				$sql = "SELECT * FROM invent_table WHERE item_status = 0 AND item_visible != 1 AND item_public = 0 AND item_id = ? ";
@@ -92,7 +103,7 @@ if(isset($_GET['IID']) && !empty(trim($_GET['IID']))){
             	<div class="col-lg-4 col-md-6 col-sm-12">            		
 					<div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
                 		<!-- slides -->
-                		<ol class="carousel-indicators list-inline mb-5 pb-5">
+                		<ol class="carousel-indicators list-inline mb-0 pb-0">
 
                 			<?php
                 				foreach($product_images as $i => $image){
@@ -141,9 +152,9 @@ if(isset($_GET['IID']) && !empty(trim($_GET['IID']))){
 
             	<div class="col-lg-8 col-md-6  col-sm-12 px-5">
               		<div class="productdesc mb-4 pt-0">
-              			<h3 class="pb-4"><?=$product_name?></h3>
-                		<div><?=$product_desc_lt?></div>
-                		<div><?=$product_detail_desc_lt?></div>
+              			<h3 class="pb-4 border-bottom"><?=$product_name?></h3>
+                		<div class="pr-4 item-desc-lt"><?=$product_desc_lt?></div>
+                		<div class="pr-4 item-detail-desc-lt"><?=$product_detail_desc_lt?></div>
               		</div>
             	</div>            
         	</div><!--EndOf row-->

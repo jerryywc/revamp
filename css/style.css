@@ -120,6 +120,22 @@ h3.text-center{
 	text-align: center;
 }
 
+.carousel-inner{
+	margin-top: 80px;
+}
+
+#custCarousel .carousel-indicators>li {
+    width: 100px;
+    height: 135px;
+    padding: 3px 10px;
+    border: 1px silver solid;
+}
+
+.carousel-indicators {
+    margin-left: 0;
+    margin-right: 0;
+ }
+
 
 div.productoverview{
 
@@ -130,8 +146,10 @@ div.productdesc{
 }
 
 div.productdesc ul{
+	/*
 	list-style-type:none;
 	margin-left:-35px;
+	*/
 }
 
 .indlub img{
