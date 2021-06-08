@@ -55,9 +55,10 @@ footer span{
 }
 
 a.active{
-	background-color:red;
+	background-color:goldenrod;
 	/*background-color:rgba(100,50,50,.3);*/
-	background-color: #4e0000ed;
+	/*background-color: #4e0000ed;*/
+	color:white;
 	text-transform: uppercase;
 }
 

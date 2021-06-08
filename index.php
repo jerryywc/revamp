@@ -32,7 +32,7 @@
 			    die("Connection failed: " . mysqli_connect_error());
 			}
 
-			$sql = "SELECT * from slider where status='1' order by slider_seq desc";
+			$sql = "SELECT * from slider where status='1' order by slider_seq desc limit 10";
 			$result = mysqli_query($conn, $sql);
 
 			$row_cnt = mysqli_num_rows($result);
@@ -109,25 +109,29 @@
 
           			<div class="row mx-0 px-0 rounded-border">
           				<!-- left column -->
-            			<div class="col-lg-4  col-sm-12 mb-2" >
-              				<div class="card  shadow-sm text-center" >
+            			<div class="col-lg-4  col-sm-12 mb-2 " >
+              				<div class="card  shadow-sm text-center mb-5 mb-md-0" >
               	
-                				<div class="fb-page" data-href="https://www.facebook.com/hirevjunction" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hirevjunction" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hirevjunction">HI-REV Junction</a></blockquote></div>
+                				<div class="fb-page" data-href="https://www.facebook.com/hirevjunction" data-tabs="timeline" data-width="500" data-height="450px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hirevjunction" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hirevjunction">HI-REV Junction</a></blockquote></div>
               				</div>
             			</div>
+
+            			<div class="col-12 d-block d-md-none " style="height:100px"></div>
             			<!-- end of left column -->
 
             			<!-- center column -->
+            			<!--
             			<div class="col-lg-4   col-sm-12 mb-2">
               				<div class="card shadow-sm" style="height:400px">
                 				<a href="gallery.php">Gallery</a>
               				</div>
             			</div>
+            			-->
             			<!-- end of center column -->
 
             			<!-- right column -->
-            			<div class="col-lg-4  col-sm-12">
-              				<div class="card shadow-sm video-responsive mt-lg-5" >
+            			<div class="col-lg-8  col-sm-12">
+              				<div class="card shadow-sm video-responsive mt-5 mt-md-0" >
               	<?php
 					if(!$conn){
 					    echo "<script> alert('Connection to database failed'); </script>";
@@ -144,7 +148,7 @@
 				    	if(!empty($video_type) && $video_type == 1){
 				    		$pos = strrpos($video_link, '/');
 				    		$youtube_link = "https://www.youtube.com/embed" . substr($video_link,$pos);
-				    		echo '<iframe style="width:100%" height="250" 
+				    		echo '<iframe style="width:100%;height:100%" height="100%" 
 				    			src="' . $youtube_link . '" 
 				    			frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 				    			encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
@@ -162,6 +166,8 @@
 		</div><!--EndOf main-->
 		<!-- end of social media panel -->
 
+		<div id="bottom-panel">
+					</div>
 
 		<?php require_once "_require/footer.php"?>
 

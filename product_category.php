@@ -210,7 +210,6 @@
             	</div>
             	<div class="col-lg-10 col-md-12  col-sm-12">
             		<div class="row mx-0 px-3 my-1 justify-content-end border-top border-bottom" style="background-color:Gainsboro">
-						<span class="pt-1 mx-3">Order:</span>
 						<a href="#" onclick="grid();return false;">
 							<span class="px-1 feather feather-32" data-feather="grid"></span>
 						</a>

@@ -65,52 +65,52 @@
 
 	
         <div class="container white pb-5">
-        	<h3 class="text-center pt-5">HI-REV 9140 PREMIUM FULLY SYNTHETIC MOTOR OIL</h3>
-          	<div class="row ">
-            	<div class="col-lg-5 col-md-6 col-sm-12">
-            		
-				<div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
-                <!-- slides -->
-                <ol class="carousel-indicators list-inline mb-5 pb-5">
-                    <li class="list-inline-item active pb-5"> 
-                    	<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> 
-                    		<img src="IMG/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item  pb-5"> 
-                    	<a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> 
-                    		<img src="IMG/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item pb-5"> 
-                    	<a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> 
-                    		<img src="IMG/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                    <li class="list-inline-item pb-5"> 
-                    	<a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> 
-                    		<img src="IMG/products/p1.png" class="img-fluid"> 
-                    	</a> 
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item my-2 active"> <img src="IMG/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
-                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
-                </div> <!-- Left right --> 
-                <a class="carousel-control-prev mt-5 pt-5" href="#custCarousel" data-slide="prev"> 
-                	<span class="carousel-control-prev-icon"></span> 
-                </a> 
-                <a class="carousel-control-next mt-5 pt-5" href="#custCarousel" data-slide="next"> 
-                	<span class="carousel-control-next-icon"></span> 
-                </a> <!-- Thumbnails -->
+        	
+          	<div class="row pt-5">
+            	<div class="col-lg-4 col-md-6 col-sm-12">            		
+					<div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                		<!-- slides -->
+                		<ol class="carousel-indicators list-inline mb-5 pb-5">
+		                    <li class="list-inline-item active pb-5"> 
+		                    	<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> 
+		                    		<img src="IMG/products/p1.png" class="img-fluid"> 
+		                    	</a> 
+		                    </li>
+		                    <li class="list-inline-item  pb-5"> 
+		                    	<a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> 
+		                    		<img src="IMG/products/p1.png" class="img-fluid"> 
+		                    	</a> 
+		                    </li>
+		                    <li class="list-inline-item pb-5"> 
+		                    	<a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> 
+		                    		<img src="IMG/products/p1.png" class="img-fluid"> 
+		                    	</a> 
+		                    </li>
+		                    <li class="list-inline-item pb-5"> 
+		                    	<a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> 
+		                    		<img src="IMG/products/p1.png" class="img-fluid"> 
+		                    	</a> 
+		                    </li>
+		                </ol>
+		                <div class="carousel-inner">
+		                    <div class="carousel-item my-2 active"> <img src="IMG/products/p1.png" alt="Hills"> </div>
+		                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
+		                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
+		                    <div class="carousel-item my-2 "> <img src="IMG/products/p1.png" alt="Hills"> </div>
+		                </div> <!-- Left right --> 
+		                <a class="carousel-control-prev mt-5 pt-5" href="#custCarousel" data-slide="prev"> 
+		                	<span class="carousel-control-prev-icon"></span> 
+		                </a> 
+		                <a class="carousel-control-next mt-5 pt-5" href="#custCarousel" data-slide="next"> 
+		                	<span class="carousel-control-next-icon"></span> 
+		                </a> <!-- Thumbnails -->
                 
-            </div>
-
+            		</div><!-- end of custCarousel -->
             	</div>
-            	<div class="col-lg-7 col-md-6  col-sm-12 px-5">
-              		<div class="productdesc mb-4 pt-5">
+
+            	<div class="col-lg-8 col-md-6  col-sm-12 px-5">
+              		<div class="productdesc mb-4 pt-0">
+              			<h3 class="pb-4">HI-REV 9140 PREMIUM FULLY SYNTHETIC MOTOR OIL</h3>
                 		<p>
                 			Premium synthethic motor oil formulated to provide performance & protection in high-performance European vehicles made by Volkswagen, Audi, Mercedes-Benz, BMW, Porsche & others. Hi-Rev 9140 SW-40 meets the most demanding & strict European performance requirements.
                 		</p>
@@ -145,7 +145,7 @@
 			        </p>
 			    </div>      
         	</div>
-    	</div>
+    	</div><!-- end of container -->
 	
 
 

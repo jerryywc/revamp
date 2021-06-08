@@ -34,23 +34,33 @@
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">
-			        	<a class="nav-link" href="#">About Us</a>
+			        	<a class="nav-link" href="about_us.php">About Us</a>
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">
+			      		<!--
 			        	<a class="nav-link <?=$product_active?>" href="product_menu.php">Products</a>
+			        -->
+			        	<a class="nav-link" href="product_category.php">Products</a>
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">
-			        	<a class="nav-link" href="#">Recommender</a>
+			        	<a class="nav-link" href="product_recommender.php">Recommender</a>
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">
-			        	<a class="nav-link" href="#">Contact</a>
+			        	<a class="nav-link" href="https://www.hi-revjunction.com/">Online Shop</a>
 			      	</li>
 
 			      	<li class="nav-item rightborder text-left">
+			        	<a class="nav-link" href="contact_us.php">Contact</a>
+			      	</li>
+
+			      	<li class="nav-item rightborder text-left">
+			      		<!--
 			        	<a class="nav-link <?=$career_active?>" href="career.php">Career</a>
+			        -->
+			        	<a class="nav-link <?=$career_active?>" href="contact_us.php">Career</a>
 			      	</li>
 			    </ul>			    
 			</div>
