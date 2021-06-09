@@ -17,8 +17,8 @@
 
 
 	try{
-		// get all other type and type desc for sidenav_others (not specified type)
-		$sql = "SELECT item_cat, item_cat_desc FROM invent_cat WHERE item_cat != ? and status = 1 GROUP BY item_cat, item_cat_desc";
+		// get all OTHERS type and type desc for sidenav_others (not specified type)
+		$sql = "SELECT item_cat, item_cat_desc FROM invent_cat WHERE item_cat != ? and status = 1 GROUP BY item_cat, item_cat_desc ORDER BY seq";
 
 		if($stmt = mysqli_prepare($conn, $sql)){
 			mysqli_stmt_bind_param($stmt, "s", $type);
@@ -41,8 +41,8 @@
 
 
 
-		// get all type and type desc for type combo box
-		$sql = "SELECT item_cat, item_cat_desc FROM invent_cat WHERE status = 1 GROUP BY item_cat, item_cat_desc";
+		// get all TYPE for type combo box
+		$sql = "SELECT item_cat, item_cat_desc FROM invent_cat WHERE status = 1 GROUP BY item_cat, item_cat_desc ORDER BY seq";
 
 		if($stmt = mysqli_prepare($conn, $sql)){
             $result = mysqli_stmt_execute($stmt);
@@ -54,13 +54,17 @@
         $type_options = "";
 
         while($row = mysqli_fetch_array($result)) {
-        	$type_options .= '<option value="' . $row['item_cat_desc'] . '" selected>' . $row['item_cat_desc'] . '</option>';
+        	if(strcmp($row['item_cat'], $type) == 0){
+        		$type_options .= '<option value="' . $row['item_cat'] . '" selected>' . $row['item_cat_desc'] . '</option>';
+        	} else {
+        		$type_options .= '<option value="' . $row['item_cat'] . '">' . $row['item_cat_desc'] . '</option>';
+        	}       	
         }
 
 
 
 
-        // get all categories and categories desc for sidenav and category combo box
+        // get all CATEGORIES for for selected TYPE for sidenav and category combo box
 		$sql = "SELECT * FROM invent_cat WHERE item_cat = ? and status = 1";
 
 		if($stmt = mysqli_prepare($conn, $sql)){
@@ -91,6 +95,7 @@
         			if($index == 0){ 
         				$sidenav .= '<li><a href="#" onclick="loadCategory(this,\'' . $row['item_cat_det'] . '\');return false;" class="active">' . 
         							$row['item_cat_det_desc'] . '</a></li>';
+        				$category = $row['item_cat_det']; // if no category specified, select the first one.
         			} else {
         				$sidenav .= '<li><a href="#" onclick="loadCategory(this,\'' . $row['item_cat_det'] . '\');return false;">' . 
         							$row['item_cat_det_desc'] . '</a></li>';
@@ -107,7 +112,16 @@
 	        		}
 	        	}
 
-				$category_options .= '<option value="' . $row['item_cat_det'] . '" selected>' . $row['item_cat_det_desc'] . '</option>';
+	        	if(!empty($category)){
+	        		if(strcmp($row['item_cat_det'], $category) == 0){
+	        			$category_options .= '<option value="' . $row['item_cat_det'] . '" selected>' . $row['item_cat_det_desc'] . '</option>';
+	        		} else {
+	        			$category_options .= '<option value="' . $row['item_cat_det'] . '">' . $row['item_cat_det_desc'] . '</option>';
+	        		}
+	        	} else {
+	        		$category_options .= '<option value="' . $row['item_cat_det'] . '">' . $row['item_cat_det_desc'] . '</option>';
+	        	}
+				
         	} 
         	$index++;
         }
@@ -191,10 +205,10 @@
 				<?=$type_desc?>
 			</p>
 			<div class="row justify-content-around m-0 p-0 d-sm-flex d-lg-none">
-				<select class="col-5 m-0 py-3">
+				<select id="type" class="col-5 m-0 py-3" onchange="selectType()">
 					<?=$type_options?>
 				</select>
-				<select class="col-5 m-0 px-1 py-3">
+				<select id="category" class="col-5 m-0 px-1 py-3" onchange="selectCategory()">
 					<?=$category_options?>
 				</select>
 			</div>
@@ -218,74 +232,9 @@
 							<span class="px-1 feather feather-32" data-feather="list"></span>
 						</a>
 					</div>
-              		<div class="row mx-0 px-0 product-panel mb-4 pt-3">
+              		<div id="catalogue" class="row mx-0 px-0 product-panel mb-4 pt-3">
 
-                		<!-- List item by selected category using ajax -->
-                		<div class="row mx-0 px-0 product col-6 col-sm-6 col-md-4 col-xl-3">
-                			<div class="row mx-0 px-0 m-1 p-1 border product-panel">
-	                			<div class="product-img col-12">
-	                				<img src="IMG/fulls.png"/>
-	                			</div>
-	                			<div class="product-desc col-12">
-	                				H
-	                			</div>
-	                			<div class="product-price col-12">
-	                				RM999.00
-	                			</div>
-	                		</div>
-                		</div>
-                		<div class="row mx-0 px-0 product col-6 col-sm-6 col-md-4 col-xl-3">
-                			<div class="row mx-0 px-0 m-1 p-1 border product-panel">
-	                			<div class="product-img col-12">
-	                				<img src="IMG/fulls.png"/>
-	                			</div>
-	                			<div class="product-desc col-12">
-	                				I
-	                			</div>
-	                			<div class="product-price col-12">
-	                				RM999.00
-	                			</div>
-	                		</div>
-                		</div>
-                		<div class="row mx-0 px-0 product col-6 col-sm-6 col-md-4 col-xl-3">
-                			<div class="row mx-0 px-0 m-1 p-1 border product-panel">
-	                			<div class="product-img col-12">
-	                				<img src="IMG/fulls.png"/>
-	                			</div>
-	                			<div class="product-desc col-12">
-	                				R
-	                			</div>
-	                			<div class="product-price col-12">
-	                				RM999.00
-	                			</div>
-	                		</div>
-                		</div>
-                		<div class="row mx-0 px-0 product col-6 col-sm-6 col-md-4 col-xl-3">
-                			<div class="row mx-0 px-0 m-1 p-1 border product-panel">
-	                			<div class="product-img col-12">
-	                				<img src="IMG/fulls.png"/>
-	                			</div>
-	                			<div class="product-desc col-12">
-	                				E
-	                			</div>
-	                			<div class="product-price col-12">
-	                				RM999.00
-	                			</div>
-	                		</div>
-                		</div>
-                		<div class="row mx-0 px-0 product col-6 col-sm-6 col-md-4 col-xl-3">
-                			<div class="row mx-0 px-0 m-1 p-1 border product-panel">
-	                			<div class="product-img col-12">
-	                				<img src="IMG/fulls.png"/>
-	                			</div>
-	                			<div class="product-desc col-12">
-	                				V
-	                			</div>
-	                			<div class="product-price col-12">
-	                				RM999.00
-	                			</div>
-	                		</div>
-                		</div>
+                		
               		</div>
             	</div>            
         	</div><!--EndOf row-->        	
@@ -297,37 +246,94 @@
 
 		<?php require_once "_require/js.php"?>
 		<script>
+			$( document ).ready(function() {
+		        loadCatalogue();
+		    });
+
+		    function loadCatalogue(){
+		    	var type = '<?=$type?>';
+		        var category = '<?=$category?>';
+		        reloadCatalogue(type, category);
+		    }
+
+		    function reloadCatalogue(type, category) {
+		        $.ajax({
+		          url: "_ajax/product_getcatalogue.php",
+		          timeout:30000,
+		          type: "GET",
+		          data: {
+		            type:type,
+		            category:category
+		          },
+		          success: function(response){
+		            $("#catalogue").html(response);
+		            console.log(response);
+		          },
+		          error: function(jqXHR, textStatus){
+		            $("#err").html(textStatus.toString());
+		          }
+		        });
+		      } // end of getCountryTable
+
 			function loadCategory(ele,cat){
 				$("ul.category-side-menu li a.active").removeClass("active");
 				$(ele).addClass('active');
+				reloadCatalogue('<?=$type?>', cat);
 			}
 
+
+			function selectType(){
+				var type = $('#type').val();
+				window.location.href = "product_category.php?type=" + type;
+			}
+
+			function selectCategory(){
+				var type = $('#type').val();
+				var category = $('#category').val();
+
+				reloadCatalogue(type, category);
+			}
+
+
+
 			function list(){
-				$('.product').removeClass("col-6 col-sm-6 col-md-4 col-xl-3");
-				$('.product').addClass("col-12");
+				//$('.product-panel').addClass("row");
+
+
+				$('.product').removeClass("col-6 col-sm-6 col-md-3 col-xl-2");
+				$('.product').addClass("col-6");
+
 
 				$('.product-img').removeClass("col-12");
-				$('.product-img').addClass("col-3");
+				$('.product-img').removeClass("product-img-fixed-height");
+				$('.product-img').addClass("col-2");
 
 				$('.product-desc').removeClass("col-12");
-				$('.product-desc').addClass("col-6");
+				$('.product-desc').removeClass("product-desc-fixed-height");
+				$('.product-desc').addClass("col-10");
 
 				$('.product-price').removeClass("col-12");
-				$('.product-price').addClass("col-3");
+				$('.product-price').addClass("col-0");
 			}
 
 			function grid(){
-				$('.product').addClass("col-6 col-sm-6 col-md-4 col-xl-3");
-				$('.product').removeClass("col-12");
+				//$('.product-panel').removeClass("row");
+
+				$('.product').addClass("col-6 col-sm-6 col-md-3 col-xl-2");
+				$('.product').removeClass("col-6");				
 
 				$('.product-img').addClass("col-12");
-				$('.product-img').removeClass("col-3");
+				$('.product-img').addClass("product-img-fixed-height");
+				$('.product-img').removeClass("col-2");
 
 				$('.product-desc').addClass("col-12");
-				$('.product-desc').removeClass("col-6");
+				$('.product-desc').addClass("product-desc-fixed-height");
+				$('.product-desc').removeClass("col-10");
 
 				$('.product-price').addClass("col-12");
-				$('.product-price').removeClass("col-3");
+				$('.product-price').removeClass("col-0");
+
+				
 			}
 		</script>
 	</body>

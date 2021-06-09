@@ -53,7 +53,11 @@ function cleanb($string){
 			$product_detail_desc_lt = "";
 
 			try{
-				$sql = "SELECT * FROM invent_table WHERE item_status = 0 AND item_visible != 1 AND item_public = 0 AND item_id = ? ";
+				$sql = "SELECT i.item_name, i.item_cat, c.item_cat_desc, i.item_cat_det, c.item_cat_det_desc, i.item_desc_lt, i.item_detail_desc_lt,
+						i.item_img_name_1, i.item_img_name_2, i.item_img_name_3, i.item_img_name_4, i.item_img_name_5, i.item_img_name_6 FROM invent_table i, invent_cat c
+						WHERE i.item_cat = c.item_cat 
+						AND i.item_cat_det = c.item_cat_det 
+						AND  item_status = 0 AND item_visible != 1 AND item_public = 0 AND item_id = ? ";
 
 				if($stmt = mysqli_prepare($conn, $sql)){       
 			      mysqli_stmt_bind_param($stmt,"s",$item_id);
@@ -64,7 +68,10 @@ function cleanb($string){
 				$result = $stmt -> get_Result();				               
 
     			if($row = mysqli_fetch_array($result)) {
+    				$type = $row['item_cat'];
+    				$type_desc = $row['item_cat_desc'];
     				$category = $row['item_cat_det'];
+    				$category_desc = $row['item_cat_det_desc'];
     				$product_name = $row['item_name'];
     				$product_desc_lt = $row['item_desc_lt'];
     				$product_detail_desc_lt = $row['item_detail_desc_lt'];
@@ -98,10 +105,16 @@ function cleanb($string){
 
 	
         <div class="container white pb-5">
-        	
+        	<p class="px-2 py-1">
+				<a href="product_menu.php" class="text-uppercase">Products</a> /
+				<a href="product_category.php?type=<?=$type?>" class="text-uppercase"><?=$type_desc?></a> /
+				<a href="product_category.php?type=<?=$type?>&category=<?=$category?>" class="text-uppercase"><?=$category_desc?></a> /
+				<?=$product_name?>
+			</p>
+
           	<div class="row pt-5">
             	<div class="col-lg-4 col-md-6 col-sm-12">            		
-					<div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+					<div id="custCarousel" class="carousel slide border" data-ride="carousel" align="center" >
                 		<!-- slides -->
                 		<ol class="carousel-indicators list-inline mb-0 pb-0">
 

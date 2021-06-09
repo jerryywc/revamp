@@ -138,11 +138,79 @@ div.container{
 {
   content: '>';
   font-size: 55px;
-  color: black;
+  color: #D5D5D5;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
-  color: black                        ;
+  color: #D5D5D5                        ;
+}
+
+
+
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (min-width: 769px) {
+  	.headerlogo{
+  		width:40%;
+  	}
+
+  	.headerlogodiv{
+  		height:120px;
+  		background-size:45%;
+  	}
+
+  	div.footer div{
+		width:49%;
+	}
+
+	.product-img-fixed-height{
+		height:350px;
+	}
+
+	.product-desc-fixed-height{
+		height: 300px;
+	}
+}
+
+/* Use a media query to add a breakpoint at 500px: */
+@media screen and (max-width: 768px) {
+  	.headerlogo{
+  		width:60%;
+  	}
+
+  	.headerlogodiv{
+  		height:90px;
+  		background-size:60%;
+  	}
+
+  	div.footer div{
+		width:100%;
+	}
+
+	div.bg-vertical-r{
+		background-image:none;
+	}
+
+	.product-img-fixed-height{
+		height:280px;
+	}
+
+	.product-desc-fixed-height{
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+  	
+
+	.product-img-fixed-height{
+		height:auto;
+	}
+
+	.product-desc-fixed-height{
+		height:auto;
+	}
 }

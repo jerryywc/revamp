@@ -31,19 +31,19 @@
               		<div class="productoverview mb-4 pt-3">
                 		<div class="row ">
 			            	<div class="col-md-6 col-sm-12 p-3">
-				              	<a href="product_category.php?type=PCMO"><img src="IMG/blank.png"/></a>
+				              	<a href="product_category.php?type=PCMO"><img src="../0/IMG/product/pcmo_menu_cover.jpg"/></a>
 				              	<h3>Motor Oil</h3>
 			            	</div>
 			            	<div class="col-md-6  col-sm-12  p-3">
-			              		<a href="product_category.php?type=MO"><img src="IMG/blank.png"/></a>
+			              		<a href="product_category.php?type=MO"><img src="../0/IMG/product/mo_menu_cover.jpg"/></a>
 			              		<h3>Motorcycle Oil</h3>
 			            	</div>
 			            	<div class="col-md-6 col-sm-12 p-3">
-				              	<a href="product_category.php?type=IND"><img src="IMG/blank.png"/></a>
+				              	<a href="product_category.php?type=IND"><img src="../0/IMG/product/ind_menu_cover.jpg"/></a>
 				              	<h3>Industrial Lubricants</h3>
 			            	</div>
 			            	<div class="col-md-6  col-sm-12  p-3">
-			              		<a href="product_category.php?type=OP"><img src="IMG/blank.png"/></a>
+			              		<a href="product_category.php?type=OP"><img src="../0/IMG/product/op_menu_cover.jpg"/></a>
 			              		<h3>Other Products</h3>
 			            	</div>            
 			        	</div>
