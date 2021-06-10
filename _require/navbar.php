@@ -61,7 +61,7 @@
 			      		<!--
 			        	<a class="nav-link <?=$career_active?>" href="career.php">Career</a>
 			        -->
-			        	<a class="nav-link <?=$career_active?>" href="contact_us.php">Career</a>
+			        	<a class="nav-link <?=$career_active?>" href="career.php">Career</a>
 			      	</li>
 			    </ul>			    
 			</div>

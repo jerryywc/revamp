@@ -34,7 +34,7 @@
 <?php
 	try{
 		// get all OTHERS type and type desc for sidenav_others (not specified type)
-		$sql = "SELECT job_title, job_desc FROM settings_career_page WHERE status = 1 ORDER BY seq DESC";
+		$sql = "SELECT about_desc FROM settings_about_us WHERE status = 1 ORDER BY seq DESC";
 
 		if($stmt = mysqli_prepare($conn, $sql)){
 			//mysqli_stmt_bind_param($stmt, "s", $type);
@@ -43,12 +43,9 @@
 
         $result = $stmt -> get_Result();
 
-        $idx = 0;
         while($row = mysqli_fetch_array($result)){
-        	$idx++;
-        	echo '<div class="col-12 col-md-10 offset-md-1 pt-3 border-bottom ql-editor">';
-        	echo '<h2 class="py-3">' . $idx . '.' . $row['job_title'] . '</h2>';
-        	echo  $row['job_desc'] . '</div>';
+        	echo '<div class="col-12 col-md-10 offset-md-1 pt-3 ql-editor">';
+        	echo  $row['about_desc'] . '</div>';
         }
 
     } catch (mysqli_sql_exception $e){
@@ -92,8 +89,7 @@
 			        alert('Error encoutered, kindly check the console log');
 			    }
 			}); 
-		}
-		*/
+		}*/
 		</script>
 	</body>
 </html>
