@@ -121,7 +121,7 @@ h3.text-center{
 }
 
 .carousel-inner{
-	margin-top: 80px;
+	margin-top: 0;
 }
 
 #custCarousel .carousel-indicators>li {

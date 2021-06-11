@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<?php require_once "_require/metalink.php"?>
-
 		
 	</head>
 	<body>
@@ -106,53 +105,33 @@
 		<!-- social media panel -->
 		<div class="main py-3">
       		<div class="album py-0 px-0 mx-0 mx-md-5">
-        		<div class="p-0 m-0 " >
+        		<div class="container p-0 m-0 ">
 
-          			<div class="row mx-0 px-0 rounded-border" style="height:800px;">
+          			<div class="row mx-0 px-0 rounded-border">
           				<!-- left column -->
-            			<div class="col-lg-4  col-sm-12 my-5" >
-              				<div class="   text-center mb-5 mb-md-0" >
+            			<div class="col-lg-4  col-sm-12 mb-2 " >
+              				<div class="card  shadow-sm text-center mb-5 mb-md-0" >
               	
-                				<div class="fb-page" data-href="https://www.facebook.com/hirevjunction" data-tabs="timeline" data-width="500" data-height="700px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hirevjunction" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hirevjunction">HI-REV Junction</a></blockquote></div>
+                				<div class="fb-page" data-href="https://www.facebook.com/hirevjunction" data-tabs="timeline" data-width="500" data-height="450px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hirevjunction" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hirevjunction">HI-REV Junction</a></blockquote></div>
               				</div>
             			</div>
-            			<!--
+
             			<div class="col-12 d-block d-md-none " style="height:100px"></div>
-            		-->
             			<!-- end of left column -->
 
             			<!-- center column -->
-            			
-            			<div class="col-lg-8   col-sm-12 mb-2">
-              				<div class="col-12 mt-5">
-                				<h2 class="p-4" style="color:white">Join Us On</h2>
+            			<!--
+            			<div class="col-lg-4   col-sm-12 mb-2">
+              				<div class="card shadow-sm" style="height:400px">
+                				<a href="gallery.php">Gallery</a>
               				</div>
-              				<div class="row mx-0 px-0 mt-5 pt-5">
-	              				<div class="col-4 p-5">
-	              					<img src="IMG/smlogo/fb.png" style="width: 50%"/>
-	              				</div>
-	              				<div class="col-4 p-5">
-	              					<img src="IMG/smlogo/in.png" style="width: 50%"/>
-	              				</div>
-	              				<div class="col-4 p-5">
-	              					<img src="IMG/smlogo/tw.png" style="width: 50%"/>
-	              				</div>
-	              			</div>
             			</div>
-            			
+            			-->
             			<!-- end of center column -->
 
-            			
-            			<!-- end of right column -->
-        			</div>
-    			</div>
-			</div>
-		</div><!--EndOf main-->
-		<!-- end of social media panel -->
-
-		<!-- right column -->
-            			<div class="col-lg-8  col-sm-12 offset-lg-2 my-5 py-5">
-              				<div class="card shadow-sm video-responsive  mt-5 mt-md-0" >
+            			<!-- right column -->
+            			<div class="col-lg-8  col-sm-12">
+              				<div class="card shadow-sm video-responsive mt-5 mt-md-0" >
               	<?php
 					if(!$conn){
 					    echo "<script> alert('Connection to database failed'); </script>";
@@ -180,6 +159,12 @@
                 
               				</div>
             			</div>
+            			<!-- end of right column -->
+        			</div>
+    			</div>
+			</div>
+		</div><!--EndOf main-->
+		<!-- end of social media panel -->
 
 		<div id="bottom-panel">
 					</div>
