@@ -18,7 +18,8 @@
 
 	try{
 		// get all OTHERS type and type desc for sidenav_others (not specified type)
-		$sql = "SELECT item_cat, item_cat_desc FROM invent_cat WHERE item_cat != ? and status = 1 GROUP BY item_cat, item_cat_desc ORDER BY seq";
+		$sql = "SELECT item_cat, item_cat_desc FROM invent_cat WHERE item_cat != ? and status = 1 
+				GROUP BY item_cat, item_cat_desc ORDER BY seq";
 
 		if($stmt = mysqli_prepare($conn, $sql)){
 			mysqli_stmt_bind_param($stmt, "s", $type);
@@ -300,17 +301,17 @@
 				//$('.product-panel').addClass("row");
 
 
-				$('.product').removeClass("col-6 col-sm-6 col-md-3 col-xl-2");
+				$('.product').removeClass("col-6 col-sm-6 col-md-3 ");
 				$('.product').addClass("col-6");
 
 
 				$('.product-img').removeClass("col-12");
 				$('.product-img').removeClass("product-img-fixed-height");
-				$('.product-img').addClass("col-2");
+				$('.product-img').addClass("col-3");
 
 				$('.product-desc').removeClass("col-12");
 				$('.product-desc').removeClass("product-desc-fixed-height");
-				$('.product-desc').addClass("col-10");
+				$('.product-desc').addClass("col-9");
 
 				$('.product-price').removeClass("col-12");
 				$('.product-price').addClass("col-0");
@@ -319,16 +320,16 @@
 			function grid(){
 				//$('.product-panel').removeClass("row");
 
-				$('.product').addClass("col-6 col-sm-6 col-md-3 col-xl-2");
+				$('.product').addClass("col-6 col-sm-6 col-md-3 ");
 				$('.product').removeClass("col-6");				
 
 				$('.product-img').addClass("col-12");
 				$('.product-img').addClass("product-img-fixed-height");
-				$('.product-img').removeClass("col-2");
+				$('.product-img').removeClass("col-3");
 
 				$('.product-desc').addClass("col-12");
 				$('.product-desc').addClass("product-desc-fixed-height");
-				$('.product-desc').removeClass("col-10");
+				$('.product-desc').removeClass("col-9");
 
 				$('.product-price').addClass("col-12");
 				$('.product-price').removeClass("col-0");

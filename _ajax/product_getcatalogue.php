@@ -56,13 +56,13 @@
           $current_item_id = $item_id;
 
          
-          echo '<div class="row mx-0 px-0 product col-6 col-sm-6 col-md-3 col-xl-2">';
+          echo '<div class="row mx-0 px-0 product col-6 col-sm-6 col-md-3 ">';
           echo '<div class="row mx-0 px-0 m-1 p-1 border product-panel align-top">';
           echo '<div class="product-img product-img-fixed-height col-12 p-3">';
           echo '<a href="product.php?IID=' . $item_id . '"><img  src="../0/IMG/product/' . $category . '/' . $item_img_name_1 . '"/></a>';
           echo '</div>';
-          echo '<div class="mt-0 pt-0 align-top product-desc product-desc-fixed-height col-12 p-3"><h5>' .  $item_name . '</h5>' . $item_desc_lt  . '</div>';
-          echo '<div class="product-price col-12"></div>';
+          echo '<div class="mt-3 pt-0 align-top product-desc product-desc-fixed-height col-12 p-3"><h5>' .  $item_name . '</h5><p>' . $item_desc_lt  . '</p></div>';
+          echo '<div class="product-price col-12" style="text-align:right"><a href="product.php?IID=' . $item_id . '">More..</a></div>';
           echo '</div></div>';
 
 
