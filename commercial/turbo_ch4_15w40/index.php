@@ -106,9 +106,9 @@ function cleanb($string){
 	
         <div class="container white pb-5">
         	<p class="px-2 py-1">
-				<a href="product_menu.php" class="text-uppercase">Products</a> /
-				<a href="product_category.php?type=<?=$type?>" class="text-uppercase"><?=$type_desc?></a> /
-				<a href="product_category.php?type=<?=$type?>&category=<?=$category?>" class="text-uppercase"><?=$category_desc?></a> /
+				<a href="../../product_menu.php" class="text-uppercase">Products</a> /
+				<a href="../../product_category.php?type=<?=$type?>" class="text-uppercase"><?=$type_desc?></a> /
+				<a href="../../product_category.php?type=<?=$type?>&category=<?=$category?>" class="text-uppercase"><?=$category_desc?></a> /
 				<?=$product_name?>
 			</p>
 

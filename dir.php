@@ -33,7 +33,7 @@
 
     		if(!file_exists($url)){
     			//mkdir($url);
-    			echo $url;
+    			echo $item_id . ": " . $url . "<br/>";
     			mkdir($url, 0777, true);
 
     			copy('templates/index.php', $url . "/index.php");
