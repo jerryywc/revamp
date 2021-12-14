@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Revamp</title>
+		<title>HI-REV LUBRICANTS</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<?php require_once "_require/metalink.php"?>
@@ -39,7 +39,13 @@
 			              		<h3>Motorcycle Oil</h3>
 			            	</div>
 			            	<div class="col-md-6 col-sm-12 p-3">
+			            		<!--
 				              	<a href="product_category.php?type=IND"><img src="../0/IMG/product/ind_menu_cover.jpg"/></a>
+				              	-->
+				              	
+				              	<a href="#"><img src="../0/IMG/product/ind_menu_cover.jpg"/></a>
+								
+
 				              	<h3>Industrial Lubricants</h3>
 			            	</div>
 			            	<div class="col-md-6  col-sm-12  p-3">

@@ -66,7 +66,7 @@
 
 
         // get all CATEGORIES for for selected TYPE for sidenav and category combo box
-		$sql = "SELECT * FROM invent_cat WHERE item_cat = ? and status = 1";
+		$sql = "SELECT * FROM invent_cat WHERE item_cat = ? and status = 1 order by item_cat_det_seq";
 
 		if($stmt = mysqli_prepare($conn, $sql)){
 			mysqli_stmt_bind_param($stmt, "s", $type);
@@ -140,7 +140,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Revamp</title>
+		<title>HI-REV LUBRICANTS</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<?php require_once "_require/metalink.php"?>

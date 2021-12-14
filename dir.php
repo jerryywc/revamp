@@ -1,6 +1,9 @@
 <?php require_once "_require/dbconn.php"?>
 
 <?php
+
+	error_reporting(E_ALL ^ E_WARNING);
+
 	if(!$conn){
 		echo "<script> alert('Connection to database failed'); </script>";
 		die("Connection failed: " . mysqli_connect_error());
@@ -31,14 +34,14 @@
 
     		//echo "<script>redirect2('" . $item_id . "', '" . $url . "');</script>";
 
-    		if(!file_exists($url)){
+    		//if(!file_exists($url)){
     			//mkdir($url);
     			echo $item_id . ": " . $url . "<br/>";
     			mkdir($url, 0777, true);
 
-    			copy('templates/index.php', $url . "/index.php");
+    			·
     			//break;
-    		}
+    		//}
 
 		}
 

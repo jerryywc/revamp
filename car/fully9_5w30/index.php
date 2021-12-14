@@ -1,12 +1,16 @@
 <?php require_once "../_require/dbconn.php"?>
 
 <?php
-
+/*
 $item_id;
 if(isset($_POST['item_id']) && !empty(trim($_POST['item_id']))){
 	$item_id = $_POST['item_id'];
 }
 
+if(isset($_GET['IID']) && !empty(trim($_GET['IID']))){
+	$item_id = $_GET['IID'];
+}
+*/
 function cleanb($string){
 
     $string = str_replace('{123', '<ol><li>', $string);
@@ -20,26 +24,6 @@ function cleanb($string){
 
 ?>
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Revamp</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<?php require_once "../_require/metalink.php"?>
-
-		<style>
-			.carousel-indicators {
-			    justify-content: left;
-			}
-		</style>
-
-	</head>
-	<body>
-		<header></header>
-		<div class="hirevlogo"></div>
-
-		<?php require_once "../_require/navbar.php"?>
 
 		<?php
 			if(!$conn){
@@ -53,6 +37,23 @@ function cleanb($string){
 			$product_detail_desc_lt = "";
 
 			try{
+
+				if(!isset($item_id) && empty($item_id)){
+					$currdir = '%/' .  basename(__DIR__) . '/%';
+					$sql = "SELECT * FROM hirevadm_db.invent_url WHERE url LIKE ?";
+
+					if($stmt = mysqli_prepare($conn, $sql)){       
+				      mysqli_stmt_bind_param($stmt,"s",$currdir);
+				      //$result = mysqli_stmt_execute($stmt);
+				      mysqli_stmt_execute($stmt) or die( mysqli_error($conn));
+				    } 
+
+					$result = $stmt -> get_Result();
+					if($row = mysqli_fetch_array($result)) {
+    				  $item_id = $row['item_id'];
+    				}
+				}
+
 				$sql = "SELECT i.item_name, i.item_cat, c.item_cat_desc, i.item_cat_det, c.item_cat_det_desc, i.item_desc_lt, i.item_detail_desc_lt,
 						i.item_img_name_1, i.item_img_name_2, i.item_img_name_3, i.item_img_name_4, i.item_img_name_5, i.item_img_name_6 FROM invent_table i, invent_cat c
 						WHERE i.item_cat = c.item_cat 
@@ -96,12 +97,53 @@ function cleanb($string){
     				}
 				}
 
+
+				$sql = "SELECT * FROM hirevadm_db.invent_seo WHERE item_id = ? ";
+
+				if($stmt = mysqli_prepare($conn, $sql)){       
+			      mysqli_stmt_bind_param($stmt,"s",$item_id);
+			      //$result = mysqli_stmt_execute($stmt);
+			      mysqli_stmt_execute($stmt) or die( mysqli_error($conn));
+			    } 
+
+				$result = $stmt -> get_Result();				               
+
+    			if($row = mysqli_fetch_array($result)) {
+    				$metadesc = $row['metadesc'];    				
+				}
+
 				//print_r($product_images);
 			} catch (mysqli_sql_exception $e){
 			    echo $e->getMessage();    
 			}       
 
 		?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Revamp</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="<?=$metadesc?>">
+		<?php require_once "../_require/metalink.php"?>
+		<meta name="description" content="<?=$metadesc?>">
+		<link rel="stylesheet" href="../../css/product.css" />
+
+
+		<style>
+			.carousel-indicators {
+			    justify-content: left;
+			}
+		</style>
+
+	</head>
+	<body>
+		<header></header>
+		<div class="hirevlogo"></div>
+
+		<?php require_once "../_require/navbar.php"?>
+
+
 
 	
         <div class="container white pb-5">
